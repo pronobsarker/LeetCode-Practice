@@ -5,6 +5,8 @@ import java.util.HashMap;
  */
 public class ValidAnagram {
 
+    int a;
+
     // method to make the freq map
     static HashMap<Character, Integer> makeFreqMap(String str) {
 
