@@ -20,30 +20,23 @@ Arraylist offers constant-time performance for the basic operations (add, remove
 class Solution {
     public List<List<String>> groupAnagrams(String[] strs) {
          //create and return the result list
-         int a;
 
        List<List<String>> resultList = new ArrayList<>();
 
-
        //we need a map from string --> list of strings
-
 
        HashMap<String, List<String>> mp =new HashMap<>();
 
-
        //loop through the string--> in java strings are immutable, so we need to create a char array
-
 
        for(String str: strs) {
            char [] tempArray = str.toCharArray(); //Converts this string to a new character array.
            //sorted (aet) but in character
            Arrays.sort(tempArray);
 
-
            //create String version
 
            String sorteString = new String(tempArray);
-
 
            if (mp.containsKey(sorteString)) {
                //add the original string
@@ -61,12 +54,9 @@ class Solution {
    //         resultList.add(entry.getValue());
           
    //     }
-       return resultList;
-      
+       return resultList;      
    }
 }
-
-
     /**
      * Algorithm:
      * 1. loop through each string in the input.
