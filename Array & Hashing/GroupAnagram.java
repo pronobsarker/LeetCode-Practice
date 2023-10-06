@@ -20,6 +20,7 @@ Arraylist offers constant-time performance for the basic operations (add, remove
 class Solution {
     public List<List<String>> groupAnagrams(String[] strs) {
          //create and return the result list
+         int a;
 
        List<List<String>> resultList = new ArrayList<>();
 

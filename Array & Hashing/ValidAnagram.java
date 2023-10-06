@@ -6,6 +6,7 @@ import java.util.HashMap;
 public class ValidAnagram {
 
     int a;
+    int b;
 
     // method to make the freq map
     static HashMap<Character, Integer> makeFreqMap(String str) {
